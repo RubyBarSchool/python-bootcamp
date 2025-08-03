@@ -1,2 +1,4 @@
 # Ignore IntelliJ IDEA project folders
 **/.idea/
+
+*.backup
