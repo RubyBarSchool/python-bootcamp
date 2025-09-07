@@ -1,0 +1,6 @@
+Debugging Odd or Even
+- Read the code in exercise.py - Spot the problems 🐞. - Modify the code to fix the program. Fix the code so that it works and passes the tests when you submit.
+
+
+
+You can copy and paste the code into PyCharm to help you debug.   
