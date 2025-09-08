@@ -1,0 +1,19 @@
+Let's plan a robust refactor for your Blackjack game in prj_copilot_refactor.py. The current code has several issues and opportunities for improvement:
+Problems and Refactor Goals:
+Global State: The use of global variables (user, computer, user_score, computer_score) makes the code error-prone and hard to maintain.
+Deck Mutation: The scores() function mutates the global cards list, which is incorrect for a real deck and can cause bugs.
+Game Logic: The winner calculation uses undeclared variables (u_score, c_score) and is not called correctly.
+Function Responsibilities: Functions are not modular; some handle both I/O and logic.
+Replay Logic: The replay loop is not cleanly separated from the game logic.
+Deck Handling: The deck should be a fresh copy for each game, and cards should be removed as they are dealt (if simulating a real deck).
+Testing and Robustness: The code should be easy to test and robust against edge cases.
+Refactor Plan:
+Remove all global variables except for constants (logo, initial cards).
+Encapsulate the game state (user hand, computer hand, deck) in a class or pass as function arguments.
+Fix the Ace handling logic so it only affects the hand, not the global deck.
+Separate I/O from logic for easier testing.
+Ensure the winner calculation uses the correct variables and is called at the right time.
+Make the code modular and readable, with clear function responsibilities.
+Ensure the deck is not mutated globally and is reset for each game.
+Add docstrings and comments for clarity.
+Now, I will implement these changes.
